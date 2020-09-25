@@ -19,6 +19,10 @@
 		75999CB925E5DA9B00CD0080 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75999C8A25E5DA9A00CD0080 /* Persistence.swift */; };
 		75999CBA25E5DA9B00CD0080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75999C8B25E5DA9B00CD0080 /* Assets.xcassets */; };
 		75999CBB25E5DA9B00CD0080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75999C8B25E5DA9B00CD0080 /* Assets.xcassets */; };
+		75999CE025E5EC1400CD0080 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75999CDF25E5EC1400CD0080 /* Store.swift */; };
+		75999CE125E5EC1400CD0080 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75999CDF25E5EC1400CD0080 /* Store.swift */; };
+		75999CEE25E5EFFD00CD0080 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75999CED25E5EFFD00CD0080 /* Dependencies.swift */; };
+		75999CEF25E5EFFD00CD0080 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75999CED25E5EFFD00CD0080 /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,8 @@
 		75999CAB25E5DA9B00CD0080 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75999CAF25E5DA9B00CD0080 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		75999CB125E5DA9B00CD0080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75999CDF25E5EC1400CD0080 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		75999CED25E5EFFD00CD0080 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +113,10 @@
 				75999C8825E5DA9A00CD0080 /* PomodoroHubApp.swift */,
 				75999C8925E5DA9A00CD0080 /* ContentView.swift */,
 				75999C8A25E5DA9A00CD0080 /* Persistence.swift */,
+				75999CDE25E5EBFF00CD0080 /* Redux */,
 				75999C8B25E5DA9B00CD0080 /* Assets.xcassets */,
 				75999C8625E5DA9A00CD0080 /* PomodoroHub.xcdatamodeld */,
+				75999CED25E5EFFD00CD0080 /* Dependencies.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -157,6 +165,14 @@
 				75999CB125E5DA9B00CD0080 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		75999CDE25E5EBFF00CD0080 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				75999CDF25E5EC1400CD0080 /* Store.swift */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75999CEE25E5EFFD00CD0080 /* Dependencies.swift in Sources */,
+				75999CE025E5EC1400CD0080 /* Store.swift in Sources */,
 				75999CB425E5DA9B00CD0080 /* PomodoroHubApp.swift in Sources */,
 				75999CB825E5DA9B00CD0080 /* Persistence.swift in Sources */,
 				75999CB225E5DA9B00CD0080 /* PomodoroHub.xcdatamodeld in Sources */,
@@ -327,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75999CEF25E5EFFD00CD0080 /* Dependencies.swift in Sources */,
+				75999CE125E5EC1400CD0080 /* Store.swift in Sources */,
 				75999CB525E5DA9B00CD0080 /* PomodoroHubApp.swift in Sources */,
 				75999CB925E5DA9B00CD0080 /* Persistence.swift in Sources */,
 				75999CB325E5DA9B00CD0080 /* PomodoroHub.xcdatamodeld in Sources */,
